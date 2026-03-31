@@ -1,0 +1,179 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #2ecc71;
+  color: white;
+}
+
+.navbar h2 {
+  font-size: 20px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+}
+
+
+
+.featured {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* RECIPE PAGE */
+.recipe {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.recipe h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2ecc71;
+}
+
+.recipe-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.recipe ul,
+.recipe ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.recipe li {
+  margin-bottom: 8px;
+}
+
+.recipe p {
+  margin: 8px 0;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2ecc71;
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+
+  .featured {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+}
